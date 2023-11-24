@@ -5,10 +5,9 @@ import NavBar from '../components/navBar/navBar'; // Adjust the path based on yo
 const CommonLayout = ({ children }) => {
   return (
     <SafeAreaView style={{ flex: 1 }}>
-      <View style={{ flex: 1 }}>
         <NavBar />
         {children}
-      </View>
+
     </SafeAreaView>
   );
 };
