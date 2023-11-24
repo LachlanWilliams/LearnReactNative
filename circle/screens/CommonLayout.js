@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, SafeAreaView } from 'react-native';
-import NavBar from './NavBar'; // Adjust the path based on your project structure
+import NavBar from '../components/navBar/navBar'; // Adjust the path based on your project structure
 
 const CommonLayout = ({ children }) => {
   return (
