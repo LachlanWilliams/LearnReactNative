@@ -1,25 +1,3 @@
-// import React from 'react';
-// import { SafeAreaView, Image, View } from 'react-native';
-// import styles from '../../styles/styles';
-
-// const NavBar = () => {
-//   return (
-//     <SafeAreaView style={styles.navBar}>
-//       {/* Your navigation bar content goes here */}
-//       <View style={styles.navBarContent}>
-//         {/* Displaying the heart icon image */}
-//         <Image source={require('../../assets/heartIcon.png')} style={styles.icon} />
-//         <Image source={require('../../assets/chatIcon.png')} style={styles.icon} />
-//         <Image source={require('../../assets/premiumIcon.png')} style={styles.icon} />
-//         <Image source={require('../../assets/profileIcon.png')} style={styles.icon} />
-//       </View>
-//     </SafeAreaView>
-//   );
-// };
-
-// export default NavBar;
-
-// NavBar.js
 import React from 'react';
 import { View, TouchableOpacity, Image } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
@@ -36,17 +14,33 @@ const NavBar = () => {
     navigation.navigate('Profile');
   };
 
+  const goToChat = () => {
+    navigation.navigate('Chat');
+  };
+
+  const goToPremium = () => {
+    navigation.navigate('Premium');
+  };
+
   return (
     <View style={styles.navBar}>
       <View style={styles.navBarContent}>
         <TouchableOpacity onPress={goToHome}>
           <Image source={require('../../assets/heartIcon.png')} style={styles.icon} />
         </TouchableOpacity>
-        <Image source={require('../../assets/chatIcon.png')} style={styles.icon} />
-        <Image source={require('../../assets/premiumIcon.png')} style={styles.icon} />
+
+        <TouchableOpacity onPress={goToChat}>
+          <Image source={require('../../assets/chatIcon.png')} style={styles.icon} />
+        </TouchableOpacity>
+
+        <TouchableOpacity onPress={goToPremium}>
+          <Image source={require('../../assets/premiumIcon.png')} style={styles.icon} />
+        </TouchableOpacity>
+
         <TouchableOpacity onPress={goToProfile}>
           <Image source={require('../../assets/profileIcon.png')} style={styles.icon} />
         </TouchableOpacity>
+
       </View>
     </View>
   );
