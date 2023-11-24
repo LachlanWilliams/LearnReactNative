@@ -1,30 +1,36 @@
 import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
-  text: {
-    fontSize: 18,
-    fontWeight: 'bold',
-  },
-  // Add more styles as needed for different components or sections
+  // ... other styles
+
   navBar: {
-    height: 110, //this is about the size
+    height: 110,
     flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'space-between',
     paddingHorizontal: 16,
-    width: '100%', // or use flex: 1
-    backgroundColor: 'lightgrey',
+    width: '100%',
+    backgroundColor: 'white',
     position: 'absolute',
     bottom: 0,
   },
+  navBarContent: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    flex: 1,
+  },
   safeArea: {
-    backgroundColor: 'white',
+    backgroundColor: 'lightgrey',
     height: '100%',
-    width: '100%', // or use flex: 1
+    width: '100%',
+  },
+  icon: {
+    height: 50,
+    width: 50,
+    marginHorizontal: 8, // Add margin between each icon if needed
   },
   purple: {
-    backgroundColor: 'purple'
-  }
+    backgroundColor: 'purple',
+  },
 });
 
 export default styles;

@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { SafeAreaView,Text, View } from 'react-native';
 import styles from './styles/styles';
-import NavBar from './components/navBar';
+import NavBar from './components/navBar/navBar';
 
 
 export default function App() {
