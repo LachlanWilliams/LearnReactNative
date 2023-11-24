@@ -1,9 +1,7 @@
 import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
-  // ... other styles
-
-  navBar: {
+   navBar: {
     height: 110,
     flexDirection: 'row',
     alignItems: 'center',
