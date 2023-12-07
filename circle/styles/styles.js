@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native';
+import { colors, fonts } from './theme';
 
 const styles = StyleSheet.create({
    navBar: {
@@ -7,7 +8,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     paddingHorizontal: 16,
     width: '100%',
-    backgroundColor: 'white',
+    backgroundColor: colors.white,
     position: 'absolute',
     bottom: 0,
   },
@@ -17,7 +18,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   safeArea: {
-    backgroundColor: 'lightgrey',
+    backgroundColor: colors.grey,
     height: '100%',
     width: '100%',
   },
@@ -29,6 +30,14 @@ const styles = StyleSheet.create({
   purple: {
     backgroundColor: 'purple',
   },
+  commonLayout: {
+    flex:1,
+    backgroundColor: colors.grey,
+    fontFamily: fonts.main
+  },
+  text: {
+    fontFamily: fonts.main
+  }
 });
 
 export default styles;
